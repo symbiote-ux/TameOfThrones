@@ -1,10 +1,10 @@
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const Kingdom = require('../src/kingdom');
 const Southeros = require('../src/southeros');
 
-describe('Southeros', function () {
-  describe('findAlliance', function () {
-    it('Should give alliance of the ruler', function () {
+describe('Southeros', () => {
+  describe('findAlliance', () => {
+    it('Should give alliance of the ruler', () => {
       const cipher = ['AIR ROZO', 'LAND FAIJWJSOOFAMAU', 'ICE STHSTSTVSASOS'];
       const ruler = 'SPACE';
       const list = [
@@ -23,8 +23,8 @@ describe('Southeros', function () {
       assert.deepEqual(expected, ['AIR', 'LAND', 'ICE']);
     });
   });
-  describe('getAllies', function () {
-    it('Should give allies of particular king', function () {
+  describe('getAllies', () => {
+    it('Should give allies of particular king', () => {
       const cipher = ['AIR ROZO', 'LAND FAIJWJSOOFAMAU', 'ICE STHSTSTVSASOS'];
       const ruler = 'SPACE';
       const list = [
